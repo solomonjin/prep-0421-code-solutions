@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100%/3);
+      padding: 0 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Indiana Jones</h1>
+  <div class="container">
+     <div class="row">
+       <div class="column">
+         <img src="images/raiders.jpg">
+         <h3>Raiders of the Lost Ark</h3>
+         <p>Raiders of the Lost Ark is a 1981 American action-adventure film directed by Steven Spielberg and written by Lawrence
+        Kasdan, based on a story by George Lucas and Philip Kaufman. It stars Harrison Ford, Karen Allen, Paul Freeman, Ronald
+        Lacey, John Rhys-Davies, and Denholm Elliott.</p>
+       </div>
+        <div class="column">
+          <img src="images/temple.jpg">
+          <h3>Temple of Doom</h3>
+          <p>Indiana Jones and the Temple of Doom is a 1984 American action-adventure film directed by Steven Spielberg. It is the
+          second installment in the Indiana Jones franchise, a prequel to the 1981 film Raiders of the Lost Ark, featuring
+          Harrison Ford reprising his role as the title character and the second film to use THX technology after Return of the
+          Jedi.</p>
+        </div>
+        <div class="column">
+          <img src="images/crusade.png">
+          <h3>The Last Crusade</h3>
+          <p>Indiana Jones and the Last Crusade is a 1989 American action-adventure film directed by Steven Spielberg, from a story
+          co-written by executive producer George Lucas. It is the third installment in the Indiana Jones franchise. Harrison Ford
+          returned in the title role, while his father is portrayed by Sean Connery. Other cast members featured include Alison
+          Doody, Denholm Elliott, Julian Glover, River Phoenix, and John Rhys-Davies. In the film, set largely in 1938, Indiana
+          searches for his father, a Holy Grail scholar, who has been kidnapped by Nazis.</p>
+        </div>
+     </div>
+  </div>
+</body>
+</html>
